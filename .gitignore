@@ -1,0 +1,43 @@
+# Xcode
+#
+# gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
+
+## User settings
+xcuserdata/
+
+## compatibility with Xcode 8 and earlier (ignoring not required starting Xcode 9)
+*.xcscmblueprint
+*.xccheckout
+
+## compatibility with Xcode 3 and earlier (ignoring not required starting Xcode 4)
+build/
+DerivedData/
+
+## Xcode 4 and 5 (automatic snapshots)
+*.moved-aside
+*.xcuserstate
+
+## Xcode 6 (iOS 8 and Swift)
+*.xcuserdatad
+
+## Xcode 7
+*.swp
+*.xcworkspace
+
+## Xcode 8
+*.xcdebugger
+
+## Xcode 9
+*.xcresult
+
+## Xcode 10
+*.xcassets
+
+## Xcode 11
+*.xcfilelist
+
+## Xcode 12
+*.xcconfig
+
+## Xcode 13
+*.xcscheme
