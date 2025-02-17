@@ -41,3 +41,5 @@ DerivedData/
 
 ## Xcode 13
 *.xcscheme
+
+*.xcodeproj

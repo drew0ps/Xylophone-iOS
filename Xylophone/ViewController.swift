@@ -22,35 +22,14 @@ class ViewController: UIViewController {
         player.play()
     }
 
-
-
-    @IBAction func keyPressedC(_ sender: UIButton) {
-        playSound(soundName: "C")
+    @IBAction func keyPressed(_ sender: UIButton) {
+        let sname = (sender.titleLabel?.text)!
+        sender.layer.opacity = 0.5
+        playSound(soundName: sname)
+        // Restore opacity after 4 seconds without blocking the main thread
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
+            sender.layer.opacity = 1
+        }
     }
-    
-    @IBAction func keyPressedD(_ sender: UIButton) {
-        playSound(soundName: "D")
-    }
-    
-    @IBAction func keyPressedE(_ sender: UIButton) {
-        playSound(soundName: "E")
-    }
-    
-    @IBAction func keyPressedF(_ sender: UIButton) {
-        playSound(soundName: "F")
-    }
-    
-    @IBAction func keyPressedG(_ sender: UIButton) {
-        playSound(soundName: "G")
-    }
-    
-    @IBAction func keyPressedA(_ sender: UIButton) {
-        playSound(soundName: "A")
-    }
-    
-    @IBAction func keyPressedB(_ sender: UIButton) {
-        playSound(soundName: "B")
-    }
-
 }
 
